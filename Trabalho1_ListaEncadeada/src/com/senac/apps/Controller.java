@@ -13,11 +13,16 @@ public class Controller {
 	private ConsoleView view = new ConsoleView();
 	
 	public void iniciaLista() {
+		
+		
+		/*
 		for (int i = 0; i < 50; ++i) {
 			Nodo<Integer> novo = new Nodo<Integer>();
 			novo.setChave((int)(Math.random() * 10000));
 			lista.insert(novo);
 		}
+		*/
+		
 	}
 	
 	public void imprimeLista() {
