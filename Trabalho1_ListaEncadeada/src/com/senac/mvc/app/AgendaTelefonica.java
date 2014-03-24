@@ -2,6 +2,7 @@ package com.senac.mvc.app;
 
 import java.util.Scanner;
 
+
 /*
 import com.senac.apps.Controller;
 import com.senac.mvc.controller.PessoaController;
@@ -32,7 +33,7 @@ public class AgendaTelefonica {
 			case "1":
 				System.out.print("\n");
 				LerArquivo mostar = new LerArquivo();
-				mostar.abrirArquivo();				
+				mostar.abrirArquivo();
 				break;
 			case "2":
 				break;
