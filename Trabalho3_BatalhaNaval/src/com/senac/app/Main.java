@@ -1,14 +1,12 @@
 package com.senac.app;
 
-import com.senac.app.views.CriaMatriz;
+import com.senac.app.controller.Inicia;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		CriaMatriz criar = new CriaMatriz();
-		criar.criaTabuleiro();
-
+		Inicia start = new Inicia();
+		start.iniciaOpcoes();
 	}
-
 }

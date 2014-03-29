@@ -36,13 +36,12 @@ public class CriaMatriz {
 
 		int[][] tabuleiro = new int[10][10];
 		// int[][] navios = new int[3][2];
-		// int[] tiro = new int[2];
-		// int tentativas=0,acertos=0;
+		//int[] tiro = new int[5];
+		//int tentativas = 0;
+		//int acertos = 0;
 
 		iniciaTabuleiro(tabuleiro);
 		mostraTabuleiro(tabuleiro);
-		// System.out.println();
-
+		
 	}
-
 }
