@@ -29,7 +29,7 @@ public class Quicksort {
 			System.out.print(vet[i] + " ");
 		}
 		
-		System.out.println("\n\nComparações: " + comp);
+		System.out.println("\n\nComparações: " + comp + "\nTrocas: " + trocas);
 	}
 	
 	public void QuickSortOrdenado(int vet[], int esquerda, int direita){
@@ -52,6 +52,7 @@ public class Quicksort {
 			if(vet[i]<pivo){
 				vet[inicio] = vet[i];
 				vet[i] = vet[inicio+1];
+				trocas++;
 				inicio++;
 			}
 		}
