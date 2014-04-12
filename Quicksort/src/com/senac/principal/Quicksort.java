@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class Quicksort {
 	
+	int trocas = 0;
+    int comp = 0; 
+	
 	public void Ordenar() {
 		Random rand = new Random();
 		
@@ -12,7 +15,7 @@ public class Quicksort {
 		
 		for(int i = 0; i < quant; i++){
 			vet[i] = rand.nextInt(10);
-		}		
+		}
 		
 		System.out.println("Desordenado: ");
 		for (int i = 0; i < quant; i++) {
@@ -25,6 +28,8 @@ public class Quicksort {
 		for (int i = 0; i < quant; i++) {
 			System.out.print(vet[i] + " ");
 		}
+		
+		System.out.println("\n\nComparações: " + comp);
 	}
 	
 	public void QuickSortOrdenado(int vet[], int esquerda, int direita){
@@ -43,10 +48,11 @@ public class Quicksort {
 		int inicio = esquerda;
 		
 		for(int i = esquerda+1; i < direita; i++){
+			comp++;
 			if(vet[i]<pivo){
 				vet[inicio] = vet[i];
 				vet[i] = vet[inicio+1];
-				inicio++;				
+				inicio++;
 			}
 		}
 		vet[inicio] = pivo;
